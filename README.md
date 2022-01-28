@@ -1,6 +1,6 @@
-# Codingly.io: Base Serverless Framework Template
+# Base Serverless Framework Template
 
-https://codingly.io
+My forked version of [Ariel Weinberger sls base template](https://github.com/arielweinberger/sls-base)
 
 ## What's included
 * Folder structure used consistently across our projects.
