@@ -3,7 +3,6 @@ frameworkVersion: '2 || 3'
 
 plugins:
   - serverless-bundle
-  - serverless-pseudo-parameters
 
 provider:
   name: aws
@@ -19,3 +18,7 @@ functions:
       - httpApi:
           method: GET
           path: '/hello'
+
+custom:
+  bundle:
+    linting: false
