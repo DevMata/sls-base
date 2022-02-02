@@ -10,6 +10,9 @@ provider:
   lambdaHasingVersion: '20211221'
   memorySize: 256
   stage: ${opt:stage, 'dev'}
+  environment:
+    AWS_ACCOUNT_ID: ${self:custom.accountId}
+    AWS_REGION: ${self:custom.region}
 
 functions:
   hello:
@@ -20,5 +23,7 @@ functions:
           path: '/hello'
 
 custom:
+  accountId: ${aws:accountId}
+  region: ${aws:region}
   bundle:
     linting: false
